@@ -9,8 +9,8 @@ where the result isn't a [non-manifold](https://blender.stackexchange.com/questi
 
 ## Recipe
 
-- make a Fibonacci spiral
-- get the Dirichlet cells from the spiral using Voronoi node
+- make a Fibonacci spiral using fib_spiral.py included with Sverchok
+- get the Dirichlet cells from the spiral using **Voronoi** node
 - use **scriptnode** with [face_gen.py](https://github.com/macbuse/Phylogenesis/blob/master/face_gen.py) as payload to add faces 
 - make the mesh non-planar by translating vertices 
 - trim extraneous vertices 
@@ -19,9 +19,11 @@ where the result isn't a [non-manifold](https://blender.stackexchange.com/questi
 
 ## Remarks 
 
+This is the first time I have used Sverchok and it's very convenient for prototyping.
+
 I wrote face_gen.py as a scriptnode essentially to understand the 
 [script interface](http://sverchok.readthedocs.io/en/latest/nodes/generators_extended/script3.html).
-There is more than one way of adding a scriptnode and I must admit, from the doc, I  don't really see what the developer wants
+There is more than one way of adding a scriptnode and I must admit, from the doc, I  don't really see what the developer wants.
 
 
 ## Sample output
